@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_full_learn/101/stateless_learn_view.dart';
+import 'package:flutter_full_learn/101/lesson_4/theory_view/stateless_learn_view.dart';
 
 class ContainerSizedBoxLearnView extends StatelessWidget {
   const ContainerSizedBoxLearnView({super.key});
@@ -15,7 +15,6 @@ class ContainerSizedBoxLearnView extends StatelessWidget {
             child: Text("4" * 150),
           ),
           Container(
-            child: Text("aaa" * 4),
             width: 100,
             height: 100,
             padding: EdgeInsets.all(
@@ -24,13 +23,10 @@ class ContainerSizedBoxLearnView extends StatelessWidget {
             decoration: ContainerDecoration
                 .welcomeDecoration, // Dışarıdaki componente padding uyguluyor
             constraints: BoxConstraints(maxHeight: 100),
+            child: Text("aaa" * 4),
           ),
           TitleTextWidget(title: "Başka Sayfadaki Widget"),
           Container(
-            child: Text(
-              "aaa" * 4,
-              maxLines: 2,
-            ),
             width: 100,
             height: 100,
             padding: EdgeInsets.all(
@@ -39,6 +35,10 @@ class ContainerSizedBoxLearnView extends StatelessWidget {
             decoration:
                 ProjectContainerDecoration(), // Dışarıdaki componente padding uyguluyor
             constraints: BoxConstraints(maxHeight: 50),
+            child: Text(
+              "aaa" * 4,
+              maxLines: 2,
+            ),
           )
         ],
       ),

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_full_learn/101/container_sized_box_learn_view.dart';
+import 'package:flutter_full_learn/101/lesson_1/container_sized_box_learn_view.dart';
 
 class ScaffoldLearnView extends StatelessWidget {
   const ScaffoldLearnView({super.key});

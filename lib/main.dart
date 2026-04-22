@@ -1,15 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_full_learn/101/appbar_learn_view.dart';
-import 'package:flutter_full_learn/101/button_learn_view.dart';
-import 'package:flutter_full_learn/101/card_learn_view.dart';
-import 'package:flutter_full_learn/101/container_sized_box_learn_view.dart';
-import 'package:flutter_full_learn/101/icon_learn_view.dart';
-import 'package:flutter_full_learn/101/image_learn_view.dart';
-import 'package:flutter_full_learn/101/padding_learn_view.dart';
-import 'package:flutter_full_learn/101/scaffold_learn_view.dart';
-import 'package:flutter_full_learn/101/stateless_learn_view.dart';
-import 'package:flutter_full_learn/101/text_learn_view.dart';
+import 'package:flutter_full_learn/101/lesson_4/theory_view/image_learn_view.dart';
+import 'package:flutter_full_learn/101/lesson_4/ui_practices/practice_1.dart';
 
 void main() {
   runApp(const MyApp());
@@ -35,9 +27,9 @@ class MyApp extends StatelessWidget {
           scrolledUnderElevation:
               0, //Sayfayı kaydırırken appBara eklenen gölgeyi kaydırmayı engelliyor
         ),
-        iconTheme: IconThemeData(size: 28, color: Colors.amber),
+        iconTheme: IconThemeData(size: 28, color: Colors.white60),
       ),
-      home: ImageLearnView(),
+      home: Practice1(),
     );
   }
 }
